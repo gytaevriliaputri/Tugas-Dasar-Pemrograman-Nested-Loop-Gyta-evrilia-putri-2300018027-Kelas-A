@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	int rows = 9;
+	int cols = 9; 
+    for (int i = 0; i <= rows; i++) {
+        for (int j = 0; j <= cols; j++) {
+            if (i == 0 || i == rows - 6 || i == rows - 3 || i == 9 || j == 0 || j == cols - 6 || j == cols - 3 || j == 9){
+                cout << " * ";
+            } else {
+                cout << "   ";
+            }
+        }
+        cout << endl;
+    }
+    return 0;
+}
